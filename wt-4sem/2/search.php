@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Food Delivery</title>
+    <title>Search</title>
     <link rel="stylesheet" href="styles.css">
     <?php
         include 'scripts.php';
@@ -24,17 +24,12 @@
             </ul>
         </nav>
         <div id="heading">
-            <h1>HOME</h1>
+            <h1>SEARCH</h1>
         </div>
-        <section class="index-section">
-            <p class="text">This website provides you an opportunity to choose and to order dishes from different categories.</p>
-            <p class="text">We offer only the highest quality food.</p>
-            <p class="text">We are the top 1000 delivery company.</p>
-            <p class="text">There is only one rule to use this service: STAY FED :)</p>
-            <figure>
-                <a href="menu.php?link=menu"><img src="images/food.jpg" width="320" height="320" alt=""></a>
-                <figcaption class="text">MENU</figcaption>
-            </figure>
+        <section class="section-wrapper">
+            <form name="search" action="#" method="get">
+                <input type="text" placeholder="Search" name="input_field"><button type="submit">GO</button>
+            </form>
         </section>
     </div>
     <footer>
