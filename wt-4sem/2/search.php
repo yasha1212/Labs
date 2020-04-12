@@ -16,11 +16,11 @@
         </header>
         <nav>
             <ul class="top-menu">
-                <li id="home"><a href="index.php?link=home">HOME</a></li>
-                <li id="menu"><a href="menu.php?link=menu">MENU</a></li>
-                <li id="news"><a href="news.php?link=news">NEWS</a></li>
-                <li id="contact"><a href="contact.php?link=contact">CONTACT</a></li>
-                <li id="search"><a href="search.php?link=search">SEARCH</a></li>
+                <li id="index"><a href="index.php">HOME</a></li>
+                <li id="menu"><a href="menu.php">MENU</a></li>
+                <li id="news"><a href="news.php">NEWS</a></li>
+                <li id="contact"><a href="contact.php">CONTACT</a></li>
+                <li id="search"><a href="search.php">SEARCH</a></li>
             </ul>
         </nav>
         <div id="heading">
@@ -37,13 +37,13 @@
             <div id="sitemap">
                 <h3>SITEMAP</h3>
                 <div>
-                    <a href="index.php?link=home">Home</a>
-                    <a href="menu.php?link=menu">Menu</a>
-                    <a href="news.php?link=news">News</a>
+                    <a href="index.php">Home</a>
+                    <a href="menu.php">Menu</a>
+                    <a href="news.php">News</a>
                 </div>
                 <div>
-                    <a href="contact.php?link=contact">Contact</a>
-                    <a href="search.php?link=search">Search</a>
+                    <a href="contact.php">Contact</a>
+                    <a href="search.php">Search</a>
                 </div>
             </div>
             <div id="links">

@@ -1,12 +1,13 @@
 <?php
     function displayNav() {
-        if(isset($_GET['link'])) {
-            echo "<style> #" . $_GET['link'] .
-                " { background: #20c2af; color: #fff;} #" . 
-                $_GET['link'] . " a { color: #fff;} </style>";
-        } else {
-            echo "<style></style>";
-        }
+        $url = $_SERVER['REQUEST_URI'];
+        $url = explode('/', $url);
+        $url = $url[count($url) - 1];
+        $url = explode('.', $url);
+        $url = $url[0];
+        echo "<style> #" . $url .
+            " { background: #20c2af; color: #fff;} #" . 
+            $url . " a { color: #fff;} </style>";
     }
     
     function displayAnswer() {
