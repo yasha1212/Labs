@@ -6,7 +6,6 @@
     <link rel="stylesheet" href="styles.css">
     <?php
         include 'scripts.php';
-        displayNav();
     ?>
 </head>
 <body>
@@ -16,11 +15,7 @@
     </header>
     <nav>
         <ul class="top-menu">
-            <li id="index"><a href="index.php">HOME</a></li>
-            <li id="menu"><a href="menu.php">MENU</a></li>
-            <li id="news"><a href="news.php">NEWS</a></li>
-            <li id="contact"><a href="contact.php">CONTACT</a></li>
-            <li id="search"><a href="search.php">SEARCH</a></li>
+            <?php displayNav(); ?>
         </ul>
     </nav>
     <div id="heading">

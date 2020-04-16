@@ -18,15 +18,25 @@ nav li {
     padding: 10px 30px;
     margin: 0;
 }
+.active {
+    background: #20c2af;
+    color: #fff;
+}
+.active a {
+    color: #fff;
+}
 .top-menu li:hover {
-     background: #20c2af;
-     color: #fff;
+    background: #20c2af;
+    color: #fff;
 }
 .top-menu li:hover a {
     color: #fff;
 }
 .top-menu a {
     color: #b2b2b2;
+}
+.active a {
+    color: #fff;
 }
 html, body {
     height: 100%;

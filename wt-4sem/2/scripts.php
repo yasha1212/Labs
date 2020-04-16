@@ -1,15 +1,22 @@
 <?php
     function displayNav() {
+        $pName = getPageName();
+        echo '<li class="' . ($pName === 'index' ? 'active' : '') . '"><a href="index.php">HOME</a></li>';
+        echo '<li class="' . ($pName === 'menu' ? 'active' : '') . '"><a href="menu.php">MENU</a></li>';
+        echo '<li class="' . ($pName === 'news' ? 'active' : '') . '"><a href="news.php">NEWS</a></li>';
+        echo '<li class="' . ($pName === 'contact' ? 'active' : '') . '"><a href="contact.php">CONTACT</a></li>';
+        echo '<li class="' . ($pName === 'search' ? 'active' : '') . '"><a href="search.php">SEARCH</a></li>';
+    }
+    
+    function getPageName() {
         $url = $_SERVER['REQUEST_URI'];
         $url = explode('/', $url);
         $url = $url[count($url) - 1];
         $url = explode('.', $url);
         $url = $url[0];
-        echo "<style> #" . $url .
-            " { background: #20c2af; color: #fff;} #" . 
-            $url . " a { color: #fff;} </style>";
+        return $url; 
     }
-    
+
     function displayAnswer() {
         if (isset($_POST['cities'])) {
             $strArray = array_unique(array_map('trim', explode(',', $_POST['cities'])));
