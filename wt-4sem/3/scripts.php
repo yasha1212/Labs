@@ -1,5 +1,17 @@
 <?php
     const CSV_HEADER_SIZE = 25;
+    const FIELD_HEADERS = array(
+        'id' => 'Id:', 
+        'name' => 'Название:', 
+        'price' => 'Цена:', 
+        'description' => 'Описание:'
+    );
+    const ERROR_DEFS = array(
+        'id' => 'Id должен быть уникальным для каждого товара и должно содержать только цифры!',
+        'name' => 'Поле ввода названия не должно быть пустым!',
+        'price' => 'Поле ввода цены должно содержать только цифры (как минимум 1)!',
+        'description' => 'Поле ввода описания не должно быть пустым!'
+    );
 
     function displayForm() {
         global $isWrongField;
@@ -74,6 +86,15 @@
             return $dataArray;
         } else {
             return $data;
+        }
+    }
+
+    function displayMenu() {
+        foreach(getDataFromFile() as $key => $value) {
+            echo '<figure>';
+            echo "<a href=\"#$key\"><img src=\"" . $value['description'] . "\" alt=\"\"></a>";
+            echo '<figcaption>' . $value['name'] . '<span>' . $value['price'] . '$ (' . round($value['price'] * 0.85, 2) . '$)</span></figcaption>';
+            echo '</figure>';
         }
     }
 

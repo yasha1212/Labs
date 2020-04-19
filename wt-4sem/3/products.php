@@ -1,19 +1,6 @@
 <?php
     include 'scripts.php';
     session_start();
-    const FIELD_HEADERS = array(
-        'id' => 'Id:', 
-        'name' => 'Название:', 
-        'price' => 'Цена:', 
-        'description' => 'Описание:'
-    );
-    const ERROR_DEFS = array(
-        'id' => 'Id должен быть уникальным для каждого товара и должно содержать только цифры!',
-        'name' => 'Поле ввода названия не должно быть пустым!',
-        'price' => 'Поле ввода цены должно содержать только цифры (как минимум 1)!',
-        'description' => 'Поле ввода описания не должно быть пустым!'
-    );
-
     if(empty($_SESSION['isWrongField'])) {
         $isWrongField = array(
             'id' => false,

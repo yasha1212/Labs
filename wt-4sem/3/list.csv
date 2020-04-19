@@ -1,4 +1,13 @@
 id,name,price,description
-1,Ball,257,Huge green ball for kids
-2,Sword,112,Ancient sword for battle representations
-3,Table,200.2,Great wooden table
+1,Pizza Margarita,8.99,images/pizza_margarita.png
+2,Pizza King,9.99,images/pizza_king.png
+3,Pizza Dolche,8.99,images/pizza_dolche.png
+4,Pizza Four Cheeses,7.99,images/pizza_fourcheeses.png
+5,Pizza Karne,8.69,images/pizza_karne.png
+6,Thai Rice with Chicken,6.49,images/thai_rice_chicken.png
+7,Thai Rice with Pig,6.99,images/thai_rice_pig.png
+8,Udon with Vegetables,7.69,images/udon_vegetable.png
+9,Cheesecake New York,3.29,images/cheesecake_ny.png
+10,Caesar Salad,5.99,images/salad_cesar.png
+11,Greek Salad,5.49,images/salad_greek.png
+12,Caesar Salad with Seafood,6.99,images/salad_seacesar.png

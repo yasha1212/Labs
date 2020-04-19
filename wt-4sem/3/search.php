@@ -22,8 +22,8 @@
             <h1>SEARCH</h1>
         </div>
         <section class="section-wrapper">
-            <form name="search" action="#" method="get">
-                <input type="text" placeholder="Search" name="input_field"><button type="submit">GO</button>
+            <form name="search" method="post">
+                <input type="text" placeholder="Search" name="input-field"><button type="submit">GO</button>
             </form>
         </section>
     </div>
