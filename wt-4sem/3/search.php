@@ -1,12 +1,10 @@
+<?php include 'scripts.php'; search(); ?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <title>Search</title>
     <link rel="stylesheet" href="styles.css">
-    <?php
-        include 'scripts.php';
-    ?>
 </head>
 <body>
     <div id="wrapper">
@@ -23,7 +21,7 @@
         </div>
         <section class="section-wrapper">
             <form name="search" method="post">
-                <input type="text" placeholder="Search" name="input-field"><button type="submit">GO</button>
+                <input type="text" placeholder="Search" name="search"><button type="submit">GO</button>
             </form>
         </section>
     </div>

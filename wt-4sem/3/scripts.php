@@ -164,4 +164,11 @@
         }
         return $isValid;
     }
+
+    function search() {
+        $pageName = $_POST['search'];
+        if(isset($pageName) && file_exists($pageName)) {
+            header('Location: ' . $pageName);
+        }
+    }
 ?>
