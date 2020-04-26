@@ -1,0 +1,22 @@
+.wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+}
+.form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.input-field {
+    height: 250px;
+    width: 400px;
+    margin: 20px;
+}
+.text {
+    max-width: 400px;
+}
+.submit-button {
+    width: 80px;
+    margin-left: 20px;
+}
