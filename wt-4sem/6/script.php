@@ -2,9 +2,7 @@
     session_start();
 
     function displayList() {
-        if(isset($_SESSION['list'])) {
-            $list = $_SESSION['list'];
-        }
+        $list = $_SESSION['list'];
         $list[] = time();
         $_SESSION['list'] = $list;
 
