@@ -1,3 +1,4 @@
+<?php include 'script.php' ?>
 <!DOCTYPE html>
 <html lang="ru">
 <head>
@@ -13,7 +14,7 @@
             <input type="submit" class="submit-button"/>
         </form>
         <div class="text">
-            <p></p>
+            <p><?php sendMessage(); ?></p>
         </div>
     </div>
 </body>
