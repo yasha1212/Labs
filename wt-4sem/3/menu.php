@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Menu</title>
+    <link rel="stylesheet" href="styles.css">
+    <?php
+        include 'scripts.php';
+    ?>
+</head>
+<body>
+    <div id="wrapper">
+        <header>
+            <h1 class="logo">Food Delivery</h1>
+        </header>
+        <nav>
+            <ul class="top-menu">
+                <?php displayNav(); ?>
+            </ul>
+        </nav>
+        <div id="heading">
+            <h1>MENU</h1>
+        </div>
+        <section class="menu-wrapper">
+            <?php displayMenu(); ?>
+        </section>
+    </div>
+    <footer>
+        <div id="footer">
+            <div id="sitemap">
+                <h3>SITEMAP</h3>
+                <div>
+                    <a href="index.php">Home</a>
+                    <a href="menu.php">Menu</a>
+                    <a href="news.php">News</a>
+                </div>
+                <div>
+                    <a href="contact.php">Contact</a>
+                    <a href="search.php">Search</a>
+                </div>
+            </div>
+            <div id="links">
+                <h3>LINKS</h3>
+                <a href="https://www.instagram.com/al_shukan/" class="social-icon instagram"></a>
+                <a href="https://vk.com/shukan99" class="social-icon vkontakte"></a>
+                <a href="https://twitter.com/al_shukan" class="social-icon twitter"></a>
+            </div>
+            <div id="copyright">
+                <p>Copyright © 2020 Shukan Aleksey, group 851005</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
