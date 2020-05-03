@@ -5,7 +5,7 @@ services:
         ports:
             - "3000:80"
         volumes:
-            - c:/Users/User/docker-demo/8:/var/www/html
+            - 'index.php path':/var/www/html
     db:
         image: mysql
         command: --default-authentication-plugin=mysql_native_password
