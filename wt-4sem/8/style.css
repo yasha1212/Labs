@@ -20,11 +20,12 @@
     background-color: lightseagreen;
     color: white;
 }
-.charts {
-    display: grid;
-    grid-template-columns: 1fr;
-    justify-items: center;
-}
 body {
     color: lightseagreen;
+}
+#chartDay {
+    margin-bottom: 40px;
+}
+.charts {
+    margin-left: 312px;
 }
