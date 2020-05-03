@@ -2,7 +2,7 @@
     display: grid;
     grid-template-columns: 1fr;
     justify-items: center;
-    max-width: 900px;
+    max-width: 65%;
     margin: auto;
 }
 .description {
@@ -24,8 +24,22 @@ body {
     color: lightseagreen;
 }
 #chartDay {
-    margin-bottom: 40px;
+    display: inline-block;
+    height: 400px;
+}
+#chartWeek {
+    display: inline-block;
+    height: 400px;
+}
+#chartMonth {
+    display: inline-block;
+    height: 400px;
+}
+#chartYear {
+    display: inline-block;
+    height: 400px;
 }
 .charts {
-    margin-left: 312px;
+    max-width: 65%;
+    margin: auto;
 }
