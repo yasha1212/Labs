@@ -1,0 +1,45 @@
+.wrapper {
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-items: center;
+    max-width: 65%;
+    margin: auto;
+}
+.description {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    margin-bottom: 75px;
+    text-align: center;
+}
+.header {
+    font-size: 60px;
+    width: 100%;
+    text-align: center;
+    margin-bottom: 20px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    border: lightseagreen 1px solid;
+    background-color: lightseagreen;
+    color: white;
+}
+body {
+    color: lightseagreen;
+}
+#chartDay {
+    display: inline-block;
+    height: 400px;
+}
+#chartWeek {
+    display: inline-block;
+    height: 400px;
+}
+#chartMonth {
+    display: inline-block;
+    height: 400px;
+}
+#chartYear {
+    display: inline-block;
+    height: 400px;
+}
+.charts {
+    max-width: 65%;
+    margin: auto;
+}
